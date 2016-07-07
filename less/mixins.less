@@ -1,0 +1,15 @@
+.container-adaptive() {
+	min-width: 320px;
+	max-width: 767px;
+	margin: 0 auto;
+
+	@media @tablet-width {
+		min-width: 768px;
+		max-width: 1200px;
+	}
+
+	@media @desktop-width {
+		min-width: 1200px;
+		max-width: 1500px;
+	}
+}

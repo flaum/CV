@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 421.61707 569.62811" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<filter>
+<feGaussianBlur stdDeviation="13.17844"/>
+</filter>
+<filter>
+<feGaussianBlur stdDeviation="6.1094"/>
+</filter>
+<filter>
+<feGaussianBlur stdDeviation="2.36007"/>
+</filter>
+<linearGradient>
+<stop offset="0" stop-color="#fff"/>
+<stop offset="1" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" x2="0" xlink:href="#linearGradient3179" y1="138.74492" y2="97.82325"/>
+<linearGradient gradientUnits="userSpaceOnUse" x2="0" xlink:href="#linearGradient3179" y1="138.74492" y2="97.82325"/>
+<linearGradient gradientUnits="userSpaceOnUse" x2="0" xlink:href="#linearGradient3179" y1="138.74492" y2="97.82325"/>
+<linearGradient gradientUnits="userSpaceOnUse" x2="0" xlink:href="#linearGradient3179" y1="138.74492" y2="97.82325"/>
+<linearGradient gradientUnits="userSpaceOnUse" x2="0" xlink:href="#linearGradient3179" y1="138.74492" y2="97.82325"/>
+<linearGradient gradientUnits="userSpaceOnUse" x2="0" xlink:href="#linearGradient3179" y1="138.74492" y2="97.82325"/>
+<linearGradient gradientUnits="userSpaceOnUse" x2="0" xlink:href="#linearGradient3179" y1="734.74492" y2="693.82326"/>
+</defs>
+<title>Magnifying Glass</title>
+<g transform="matrix(2.72802,-1.57503,1.57503,2.72802,-4385.05542,1058.68116)">
+<path d="m1430,469.36218c0,24.85282-20.1472,45-45,45s-45-20.14718-45-45 20.1472-45 45-45 45,20.14719 45,45z" fill="#ccc" transform="translate(8.00003,8.00001)"/>
+<path d="m1393,424.375c-29.256,0-53,23.74401-53,53 0,25.98023 18.7251,47.60616 43.4062,52.125-.1852,4.0398-3.9062,85.12844-3.9062,85.25 0,3.657 6.0438,6.62498 13.5,6.625s13.5-2.96802 13.5-6.625l-3.9062-85.25c24.6811-4.51884 43.4062-26.14476 43.4062-52.125 0-29.256-23.744-52.99999-53-53zm0,8c24.84,1e-005 45,20.16 45,45s-20.16,45-45,45-45-20.16-45-45 20.16-45 45-45z"/>
+<path d="m1393,432.375c-22.6185,0-41.3293,16.69398-44.5,38.4375 6.622,3.83512 14.3021,6.0625 22.5,6.0625 22.6185,0 41.3293-16.72522 44.5-38.46875-6.622-3.83512-14.3021-6.03125-22.5-6.03125z" fill="#f2f2f2"/>
+</g>
+</svg>
