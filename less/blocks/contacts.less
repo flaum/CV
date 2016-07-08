@@ -25,6 +25,8 @@
 }
 
 .contacts__item-text {
+	flex-grow: 1;
+
 	padding-left: 5%;
 
 	font-weight: bold;
@@ -110,4 +112,22 @@
 	width: 30px;
 	height: 30px;
 	margin-right: 10px;
+}
+
+@media @tablet-width {
+
+	.contacts__list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.contacts__item {
+		flex-basis: 50%;
+	}
+
+	.contacts__item-text {
+		flex-grow: 1;
+	}
 }

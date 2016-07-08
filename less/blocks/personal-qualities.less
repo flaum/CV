@@ -3,7 +3,6 @@
 
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 }
 
 .personal-qualities__title {
@@ -41,5 +40,18 @@
 		height: 60px;
 
 		fill: @black;
+	}
+}
+
+@media @tablet-width {
+
+	.personal-qualities__list {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.personal-qualities__list-item {
+		flex-basis: 49%;
 	}
 }

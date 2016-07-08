@@ -65,3 +65,32 @@
 		transition: fill 0.5s ease;
 	}
 }
+
+@media @tablet-width {
+
+	.skils__list {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.skils__list-item {
+		flex-basis: 48.5%;
+		margin: 0;
+
+		margin-bottom: 25px;
+	}
+}
+
+@media @desktop-width {
+
+	.skils__list-item {
+		flex-basis: 30%;
+		flex-grow: 1;
+
+		margin-left: 2%;
+	}
+}
