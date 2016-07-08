@@ -7,7 +7,7 @@
 
 	position: relative;
 	display: block;
-	height: 330px;
+	height: 410px;
 	background: #ECEDF9;
 }
 
@@ -15,24 +15,84 @@
 .page-header__logo-block {
 	position: absolute;
 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
 	&--css {
 		top: 43px;
 		left: 15%;
+
+		&::after {
+			content: "";
+
+			display: flex;
+
+			width: 60px;
+			height: 60px;
+			margin-left: 20px;
+
+			background: url("../img/logo-css.svg") no-repeat 50% 50%;
+			background-size: 60px 60px;
+		}
 	}
 
 	&--html {
-		top: 120px;
+		top: 140px;
 		right: 31%;
+
+		&::before {
+			content: "";
+
+			display: flex;
+
+			width: 60px;
+			height: 60px;
+			margin-right: 20px;
+
+			background: url("../img/logo-html.svg") no-repeat 50% 50%;
+			background-size: 60px 60px;
+		}
 	}
 
 	&--less {
-		top: 180px;
+		top: 220px;
 		left: 27%;
+
+		&::after {
+			content: "";
+
+			display: flex;
+
+			width: 70px;
+			height: 70px;
+			margin-left: 20px;
+
+			background: url("../img/logo-less.svg") no-repeat 50% 50%;
+			background-size: 70px 70px;
+		}
 	}
 
 	&--gulp {
-		top: 250px;
+		top: 300px;
 		right: 36%;
+
+		&::before {
+			content: "";
+
+			display: flex;
+
+			width: 70px;
+			height: 70px;
+			// margin-right: 20px;
+
+			background: url("../img/logo-gulp.svg") no-repeat 50% 50%;
+			background-size: 70px 70px;
+		}
+	}
+
+	span {
+		text-shadow: 0px 5px 7px rgba(122, 122, 122, 0.5);
 	}
 }
 
