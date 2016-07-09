@@ -3,6 +3,10 @@
 
 	display: flex;
 	flex-direction: column;
+
+	span {
+		cursor: default;
+	}
 }
 
 .contacts__title {
@@ -22,6 +26,13 @@
 
 	padding-left: 5%;
 	padding-bottom: 15px;
+
+	&--skype:hover {
+
+		svg {
+			fill: @skype-color;
+		}
+	}
 }
 
 .contacts__item-text {
@@ -49,43 +60,48 @@
 	height: 37px;
 	margin-left: 1px;
 
-	fill: @black;
+	fill: @deep-dark-yellow-green;
 }
 
 .contacts__social-icon {
 	width: 40px;
 	height: 40px;
 	margin-right: 5%;
+
+	fill: @deep-dark-yellow-green;
 }
 
 .contacts__skype-icon {
 	width: 40px;
-	height: 38px;
+	height: 40px;
+
+	fill: @deep-dark-yellow-green;
+
+	transition: fill 0.3s ease;
 }
 
 .contacts__phone-icon {
 	width: 40px;
 	height: 40px;
 
-	fill: @black;
+	fill: @deep-dark-yellow-green;
 }
 
 .contacts__vk-icon {
 	width: 40px;
 	height: 40px;
 
-	fill: @vk-color;
+	fill: @deep-dark-yellow-green;
 
 	transition: fill 0.3s ease,
 							opacity 0.3s ease;
 
 	&:hover {
-		fill: darken(@vk-color, 10%);
+		fill: @vk-color;
 	}
 
 	&:active {
-		fill: darken(@vk-color, 10%);
-		opacity: 0.3;
+		fill: darken(@vk-color, 20%);
 	}
 }
 
@@ -93,18 +109,17 @@
 	width: 40px;
 	height: 40px;
 
-	fill: @fb-color;
+	fill: @deep-dark-yellow-green;
 
 	transition: fill 0.3s ease,
 							opacity 0.3s ease;
 
 	&:hover {
-		fill: darken(@fb-color, 10%);
+		fill: @fb-color;
 	}
 
 	&:active {
-		fill: darken(@fb-color, 10%);
-		opacity: 0.3;
+		fill: darken(@fb-color, 20%);
 	}
 }
 

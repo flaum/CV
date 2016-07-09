@@ -1,0 +1,145 @@
+.about {
+	.container-adaptive();
+
+	display: flex;
+	flex-direction: column;
+}
+
+.about__title {
+	.title();
+
+	padding-bottom: 40px;
+}
+
+.about__photo-wrapper {
+	align-self: flex-start;
+
+	margin-left: 5%;
+
+	line-height: 0;
+
+	border: 20px solid @white;
+	box-shadow: 0px 3px 6px 3px rgba(122, 122, 122, 0.3);
+
+	box-sizing: content-box;
+
+	img {
+		width: 240px;
+		height: 180px;
+
+		box-shadow: 0 0 13px 3px rgba(122, 12, 122, 0.3)
+	}
+}
+
+.about__info-container {
+	display: flex;
+	flex-direction: column;
+
+	padding-left: 5%;
+}
+
+.about__name {
+	padding-top: 30px;
+	padding-bottom: 15px;
+
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.about__age {
+	padding-bottom: 10px;
+
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.about__marital {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+@media @tablet-width {
+
+	.about {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.about__title {
+		order: -13;
+	}
+
+	.about__photo-wrapper {
+		margin-left: 0;
+		margin-right: 5%;
+
+		img {
+			width: 300px;
+			height: 225px;
+		}
+	}
+
+	.about__info-container {
+		order: -1;
+	}
+
+	.about__name {
+		padding-top: 0;
+
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	.about__age {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.about__marital {
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+@media @desktop-width {
+
+	.about {
+		align-items: center;
+	}
+
+	.about__photo-wrapper {
+		order: -2;
+
+		margin-left: 5%;
+		margin-right: 0;
+
+		img {
+			width: 500px;
+			height: 375px;
+		}
+	}
+
+	.about__info-container {
+		padding-left: 0;
+		padding-right: 5%;
+
+		align-items: flex-end;
+	}
+
+	.about__name {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.about__age {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	.about__marital {
+		font-size: 28px;
+		line-height: 36px;
+	}
+}

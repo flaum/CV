@@ -4,6 +4,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	span {
+		cursor: default;
+	}
 }
 
 .skils__title {
@@ -28,24 +32,26 @@
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
 	padding-right: 5px;
 
-	background: @wild-blue-krayola;
-	border-radius: 15px;
-	box-shadow: 0 2px 5px 2px rgba(122, 122, 122, 0.5);
 
 	transition: box-shadow 0.3s ease,
 							background 0.3s ease;
 
+	background: darken(@wild-blue-krayola, 5%);
+	border-radius: 15px;
+	box-shadow: inset 0 -2px 5px 0px rgba(122, 122, 122, 0.8);
+
+
 	&:hover {
-		background: darken(@wild-blue-krayola, 5%);
-		box-shadow: inset 0 -2px 5px 0px rgba(122, 122, 122, 0.8);
+		background: @wild-blue-krayola;
+		box-shadow: 0 2px 5px 2px rgba(122, 122, 122, 0.5);
 
 		svg {
-			fill: lighten(@wild-blue-krayola, 5%)
+			fill: darken(@wild-blue-krayola, 50%);
 		}
 	}
 
@@ -60,7 +66,7 @@
 		width: 50px;
 		height: 50px;
 
-		fill: darken(@wild-blue-krayola, 50%);
+		fill: lighten(@wild-blue-krayola, 5%);
 
 		transition: fill 0.5s ease;
 	}
@@ -82,6 +88,11 @@
 		margin: 0;
 
 		margin-bottom: 25px;
+
+		span {
+			font-size: 18px;
+			line-height: 28px;
+		}
 	}
 }
 
