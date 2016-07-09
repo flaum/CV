@@ -111,6 +111,29 @@
 			height: 499px;
 		}
 	}
+
+	.portfolio__info-text {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.portfolio__btns-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.portfolio__github-btn {
+		flex-basis: 40%;
+		margin-bottom: 0;
+	}
+
+	.portfolio__page-btn {
+		flex-basis: 40%;
+	}
 }
 
 @media @desktop-width {
@@ -121,5 +144,22 @@
 			width: 1200px;
 			height: 780px;
 		}
+	}
+
+	.portfolio__info-text {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.portfolio__btns-wrapper {
+		justify-content: space-around;
+	}
+
+	.portfolio__github-btn {
+		flex-basis: 30%;
+	}
+
+	.portfolio__page-btn {
+		flex-basis: 30%;
 	}
 }
