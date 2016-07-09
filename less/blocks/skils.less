@@ -57,7 +57,7 @@
 	}
 
 	span {
-		width: 80%;
+		width: 83%;
 
 		font-family: Verdana, Arial, sans-serif;
 		font-weight: bold;
@@ -71,6 +71,10 @@
 
 		transition: fill 0.5s ease;
 	}
+}
+
+.skils__up-arrow {
+	display: none;
 }
 
 @media @tablet-width {
@@ -87,7 +91,6 @@
 	.skils__list-item {
 		flex-basis: 48.5%;
 		margin: 0;
-
 		margin-bottom: 25px;
 
 		span {
@@ -95,7 +98,30 @@
 			line-height: 28px;
 		}
 	}
+
+	.skils__up-arrow {
+		display: flex;
+
+		font-size: 0;
+		line-height: 0;
+
+		svg {
+			fill: @deep-dark-yellow-green;
+			opacity: 0.3;
+
+			transition: opacity 0.3s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:active {
+				opacity: 0.3;
+			}
+		}
+	}
 }
+
 
 @media @desktop-width {
 
@@ -103,6 +129,7 @@
 		flex-basis: 30%;
 		flex-grow: 1;
 
-		margin-left: 2%;
+		margin-left: 1%;
+		margin-right: 1%;
 	}
 }

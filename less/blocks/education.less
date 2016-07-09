@@ -131,6 +131,10 @@
 	box-sizing: content-box;
 }
 
+.education__up-arrow {
+	display: none;
+}
+
 @media @mobile-width-only {
 
 	.education__title {
@@ -175,6 +179,31 @@
 		margin-bottom: 0;
 		margin-right: 2.5%;
 		margin-left: 2.5%;
+	}
+
+	.education__up-arrow {
+		display: flex;
+		justify-content: center;
+
+		padding-top: 25px;
+
+		font-size: 0;
+		line-height: 0;
+
+		svg {
+			fill: @deep-dark-yellow-green;
+			opacity: 0.3;
+
+			transition: opacity 0.3s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:active {
+				opacity: 0.3;
+			}
+		}
 	}
 }
 

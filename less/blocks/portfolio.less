@@ -104,6 +104,10 @@
 	.btn(@klein-blue, 33%);
 }
 
+.portfolio__up-arrow {
+	display: none;
+}
+
 @media @tablet-width {
 
 	.portfolio__item {
@@ -145,6 +149,31 @@
 
 	.portfolio__page-btn {
 		flex-basis: 44%;
+	}
+
+	.portfolio__up-arrow {
+		display: flex;
+		justify-content: center;
+
+		margin-top: -92px;
+		margin-bottom: 60px;
+		font-size: 0;
+		line-height: 0;
+
+		svg {
+			fill: @deep-dark-yellow-green;
+			opacity: 0.3;
+
+			transition: opacity 0.3s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:active {
+				opacity: 0.3;
+			}
+		}
 	}
 }
 
