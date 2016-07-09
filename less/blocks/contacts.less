@@ -26,13 +26,6 @@
 
 	padding-left: 5%;
 	padding-bottom: 15px;
-
-	&--skype:hover {
-
-		svg {
-			fill: @skype-color;
-		}
-	}
 }
 
 .contacts__item-text {
@@ -78,6 +71,10 @@
 	fill: @deep-dark-yellow-green;
 
 	transition: fill 0.3s ease;
+
+	&:hover {
+		fill: @skype-color;
+	}
 }
 
 .contacts__phone-icon {

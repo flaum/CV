@@ -41,17 +41,18 @@
 	transition: box-shadow 0.3s ease,
 							background 0.3s ease;
 
-	background: darken(@wild-blue-krayola, 5%);
+	background: @wild-blue-krayola;
 	border-radius: 15px;
-	box-shadow: inset 0 -2px 5px 0px rgba(122, 122, 122, 0.8);
+	box-shadow: inset 0 -2px 5px 0px rgba(122, 122, 122, 0.8),
+							0 3px 6px 3px rgba(122, 122, 122, 0.5);
 
 
 	&:hover {
-		background: @wild-blue-krayola;
-		box-shadow: 0 2px 5px 2px rgba(122, 122, 122, 0.5);
+		background: darken(@wild-blue-krayola, 15%);
+		box-shadow: 0 2px 5px 2px rgba(122, 122, 122, 0.8);
 
 		svg {
-			fill: darken(@wild-blue-krayola, 50%);
+			fill: @wild-blue-krayola;
 		}
 	}
 
@@ -66,7 +67,7 @@
 		width: 50px;
 		height: 50px;
 
-		fill: lighten(@wild-blue-krayola, 5%);
+		fill: darken(@wild-blue-krayola, 15%);
 
 		transition: fill 0.5s ease;
 	}
