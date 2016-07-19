@@ -14,17 +14,28 @@ var imagemin = require("gulp-imagemin");
 var server = require("browser-sync");
 var run = require("run-sequence");
 var del = require("del");
+var jade = require("gulp-jade");
 
 gulp.task("build", function(fn) {
   run(
     "clean",
     "copy",
+    "html",
     "style",
     "images",
     "symbols",
     fn
   );
 });
+
+gulp.task("html", function() {
+  gulp.src("jade/index.jade")
+  .pipe(plumber())
+  .pipe(jade())
+  .pipe(rename("index-ru.html"))
+  .pipe(gulp.dest("."))
+  .pipe(server.reload({stream: true}));
+})
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -81,6 +92,7 @@ gulp.task("serve", function() {
 	});
 
   gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("jade/**/*.jade", ["html"]);
   gulp.watch("*.html").on("change", server.reload);
 });
 
