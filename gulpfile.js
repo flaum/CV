@@ -20,7 +20,7 @@ gulp.task("build", function(fn) {
   run(
     "clean",
     "copy",
-    "html",
+    // "html",
     "style",
     "images",
     "symbols",
@@ -28,14 +28,14 @@ gulp.task("build", function(fn) {
   );
 });
 
-gulp.task("html", function() {
-  gulp.src("jade/index.jade")
-  .pipe(plumber())
-  .pipe(jade())
-  .pipe(rename("index-ru.html"))
-  .pipe(gulp.dest("."))
-  .pipe(server.reload({stream: true}));
-})
+// gulp.task("html", function() {
+//   gulp.src("jade/index.jade")
+//   .pipe(plumber())
+//   .pipe(jade())
+//   .pipe(rename("index-ru.html"))
+//   .pipe(gulp.dest("."))
+//   .pipe(server.reload({stream: true}));
+// })
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -55,7 +55,7 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("css"))
     .pipe(minify())
-    .pipe(rename("style.css"))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("css"))
     .pipe(server.reload({stream: true}));
 });
@@ -101,6 +101,7 @@ gulp.task("copy", function() {
 		"fonts/**/*.{woff,woff2}",
 		"img/**",
 		"js/**",
+		"css/**",
 		"*.html"
 	], {
 		base: "."
