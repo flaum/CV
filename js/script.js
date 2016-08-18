@@ -3,9 +3,47 @@ var order;
 var items;
 var title;
 var reverse;
+var portfolioImgs;
+var imgsUrlMob = [
+	"img/mba-mobile@1x.jpg",
+	"img/mishka-mobile@1x.jpg",
+	"img/gllacy-mobile@1x.jpg",
+	"img/sedona-mobile@1x.jpg"
+];
+var imgsUrlTabl = [
+	"img/mba-tablet@1x.jpg",
+	"img/mishka-tablet@1x.jpg",
+	"img/gllacy-tablet@1x.jpg",
+	"img/sedona-tablet@1x.jpg"
+];
+var imgsUrlDesk = [
+	"img/mba-desktop@1x.jpg",
+	"img/mishka-desktop@1x.jpg",
+	"img/gllacy-desktop@1x.jpg",
+	"img/sedona-desktop@1x.jpg"
+];
 
 $(document).ready(function() {
 	portfolioContainer = $(".portfolio");
+	portfolioImgs = $(".portfolio__slider-image-item").children();
+
+	function adaptiveImgs(item, mob, tabl, desk) {
+		var screenWidth = window.innerWidth;
+
+		if(screenWidth < 768) {
+			for(var i = 0; i < item.length; i++) {
+				$(item[i]).attr("src", mob[i]);
+			};
+		} else if(screenWidth >= 768 && screenWidth < 1200) {
+			for(var i = 0; i < item.length; i++) {
+				$(item[i]).attr("src", tabl[i]);
+			};
+		} else {
+			for(var i = 0; i < item.length; i++) {
+				$(item[i]).attr("src", desk[i]);
+			};
+		};
+	};
 
 	function reverse(container) {
 		console.log("start");
@@ -21,4 +59,5 @@ $(document).ready(function() {
 	};
 
 	reverse(portfolioContainer);
+	adaptiveImgs(portfolioImgs, imgsUrlMob, imgsUrlTabl, imgsUrlDesk);
 });
