@@ -4911,6 +4911,47 @@ body {
   margin-right: 5%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 30%, rgba(0, 0, 0, 0) 100%);
 }
+.portfolio__slider-container {
+  margin: 0 5px;
+  padding: 0;
+  background: #ffffff;
+  border: 24px solid #ffffff;
+  box-shadow: 0 3px 6px rgba(122, 122, 122, 0.6);
+  overflow: hidden;
+  transform: rotate(-5deg);
+  transition: all 0.6s ease;
+}
+.portfolio__slider-container:hover {
+  transform: rotate(5deg);
+}
+.portfolio__slider-container:hover .portfolio__slider::after {
+  transform: translateX(1200px);
+}
+.portfolio__slider {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 4;
+}
+.portfolio__slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: url("../img/wall-desktop@1x.jpg") repeat 50% 50%;
+  background-size: contain;
+  transition: all 1.3s ease;
+}
+.portfolio__slider-image-item img {
+  box-shadow: 0 3px 6px rgba(122, 122, 122, 0.6);
+}
 .portfolio__slider.carousel .next.left,
 .portfolio__slider.carousel .prev.right {
   opacity: 1;
@@ -4929,11 +4970,22 @@ body {
   left: 0;
   transition: opacity 0.7s ease;
 }
+.portfolio__slider:hover .portfolio__slider-nav {
+  opacity: 1;
+}
+.portfolio__slider .portfolio__slider-nav {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.portfolio__slider .portfolio__slider-nav:active {
+  opacity: 0;
+}
 .portfolio__item {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
-  align-items: center;
+  -ms-grid-row-align: center;
+      align-items: center;
 }
 .portfolio__item::after {
   content: "";
@@ -4957,6 +5009,9 @@ body {
   font-size: 25px;
   line-height: 30px;
   text-align: center;
+}
+.portfolio__item--nojs {
+  display: flex;
 }
 .portfolio__item-image {
   text-align: center;
