@@ -9,19 +9,25 @@
 	.title();
 }
 
-.portfolio__slider .next.left,
-.portfolio__slider .prev.right {
+.portfolio__slider.carousel .next.left,
+.portfolio__slider.carousel .prev.right {
 	opacity: 1;
 	z-index: 1;
 }
 
-.portfolio__slider .active.left,
-.portfolio__slider .active.right {
+.portfolio__slider.carousel .active.left,
+.portfolio__slider.carousel .active.right {
 	opacity: 0;
 	z-index: 2;
 }
 
-.portfolio__slider-image-item {
+.portfolio__slider.carousel .carousel-control {
+  z-index: 1000;
+  outline:none;
+}
+
+.portfolio__slider.carousel  .portfolio__slider-image-item {
+	left: 0;
 	transition: opacity 0.7s ease;
 }
 
