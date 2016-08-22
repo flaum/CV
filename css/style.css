@@ -4897,9 +4897,6 @@ body {
   margin-right: 5%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 30%, rgba(0, 0, 0, 0) 100%);
 }
-.portfolio__slider-space {
-  display: none;
-}
 .portfolio__slider-container {
   padding: 0;
   background: #ffffff;
@@ -4981,6 +4978,8 @@ body {
   align-items: center;
   width: 50px;
   height: 50px;
+  font-size: 0;
+  line-height: 0;
   background: red;
   border-radius: 50%;
 }
@@ -5848,9 +5847,6 @@ body {
   .portfolio__page-btn {
     font-size: 20px;
     line-height: 26px;
-  }
-  .portfolio__slider-space {
-    display: block;
   }
   .portfolio__item h2 {
     width: 400px;
