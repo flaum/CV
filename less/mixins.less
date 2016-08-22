@@ -58,7 +58,7 @@
 }
 
 .slider-btn(@bg-color: @slider-btn-bg-color) {
-	// position: relative;
+	position: relative;
 	// z-index: -1000;
 
 	display: flex;
@@ -74,9 +74,10 @@
 	background: @bg-color;
 	border-radius: 50%;
 
-	opacity: 0.7;
+	opacity: 0;
 
 	transform: scale(0);
+	transition: opacity 0.3s ease;
 
 	svg {
 		width: 30px;
